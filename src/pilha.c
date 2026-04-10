@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "../lib/pilha.h"
+#include "pilha.h"
 
 typedef struct Pilha_ {
     int size;

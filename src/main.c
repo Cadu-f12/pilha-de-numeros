@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-#include "./lib/pilha.h"
+#include "pilha.h"
 
 typedef struct Pilha_ {
     int head;
@@ -21,21 +22,30 @@ int main() {
 
         if(user == 1) {
             printf("Insira um número para empilhar: ");
-
             int num;
             scanf("%d", &num);
+            
+
+            system("clear");
+            system("sleep 0.5");
 
             push(stack, num);
-            printf("\n");
+            printf("Valor %d inserido na pilha!\n\n", num);
         } else if(user == 2) {
+            system("clear");
+            system("sleep 0.5");
+            
             int del;
+            
             pop(stack, &del);
 
-            printf("Valor retirado da pilha: %d\n", del);
-            printf("\n");
+            printf("Valor retirado da pilha: %d\n\n", del);
         } else if(user == 3) {
-            printf("Valor pego da pilha: %d\n", peek(stack));
-            printf("\n");
+            system("clear");
+            system("sleep 0.5");
+
+            int exi = peek(stack);
+            printf("Valor pego da pilha: %d\n\n", exi);
         }
     } while(user == 1 || user == 2 || user == 3);
 
