@@ -12,7 +12,6 @@ Através do menu interativo, é possível realizar:
 * **Push (Empilhar):** Insere um novo elemento no topo da pilha.
 * **Pop (Desempilhar):** Remove e retorna o elemento que está no topo.
 * **Peek/Top:** Consulta qual é o elemento no topo sem removê-lo.
-* **IsEmpty:** Verifica se a pilha contém elementos.
 * **Display Stack:** Exibe a pilha completa (do topo para a base).
 
 ## 🛠️ Tecnologias Utilizadas
